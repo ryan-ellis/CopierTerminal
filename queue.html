@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>UMD Copier Terminal</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+  </head>
+
+  <body style="background-color: #e50909;">
+
+  	<nav class="navbar navbar-expand-lg navbar-light bg-light" style="min-width: 90%">
+	  <a class="navbar-brand" href="index.html"><img src="images/umd_cs_logo.png" style="height: 2em; padding: 0 auto;"></a>
+
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+	    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="index.html">Home</a>
+	      </li>
+	      <li class="nav-item active">
+	        <a class="nav-link" href="about.html">About</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+
+    <main role="main">
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+
+          <div class="col-xs-6 rounded" style="margin-right: auto; margin-left: auto; margin-bottom:35px; margin-top:35px; background-color: #ffffff; padding: 1em; min-width: 75%">
+            <h2 class="text-center">Copy Machine #1</h2>
+
+            <p><b>STATUS: </b><b style="color:green">Online</b><i class="float-right">Last updated: <span id="datetime"></span></i></p>
+                        
+            <table class="table text-center" style="margin-right: auto; margin-left: auto;">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Position</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Number of Copies</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Estimated Completion</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Pedram</td>
+                  <td>12</td>
+                  <td><b>Complete</b></td>
+                  <td>n/a</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Fawzi</td>
+                  <td>131</td>
+                  <td><b style="color: green">Processing</b></td>
+                  <td>4:35 p.m.</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Nelson</td>
+                  <td>216</td>
+                  <td style="color: orange"><b>In Queue</b></td>
+                  <td>5:16 p.m.</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Herman</td>
+                  <td>330</td>
+                  <td style="color: orange"><b>In Queue</b></td>
+                  <td>6:15 p.m.</td>
+                </tr>
+              </tbody>
+            </table>
+          	
+          </div>
+
+          <div class="col-xs-6 rounded" style="margin-right: auto; margin-left: auto; margin-bottom:35px; margin-top:35px; background-color: #ffffff; padding: 1em; min-width: 75%">
+            <h2 class="text-center">Copy Machine #2</h2>
+
+            <p><b>STATUS: </b><b style="color:green">Online</b><i class="float-right">Last updated: <span id="datetime-2"></span></i></p>
+                        
+            <table class="table text-center" style="margin-right: auto; margin-left: auto;">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Position</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Number of Copies</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Estimated Completion</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Foster</td>
+                  <td>67</td>
+                  <td><b style="color: green">Processing</b></td>
+                  <td>4:47 p.m.</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Elamn</td>
+                  <td>232</td>
+                  <td style="color: orange"><b>In Queue</b></td>
+                  <td>6:37 p.m.</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Davis</td>
+                  <td>445</td>
+                  <td style="color: orange"><b>In Queue</b></td>
+                  <td>7:45 p.m.</td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+
+          <div class="col-xs-6 rounded" style="margin-right: auto; margin-left: auto; margin-bottom:35px; margin-top:35px; background-color: #ffffff; padding: 1em; min-width: 75%">
+            <h2 class="text-center">Copy Machine #3</h2>
+
+            <p><b>STATUS: </b><b style="color:red">Offline</b><i class="float-right">Last updated: <span id="datetime-3"></span></i></p>
+                        
+            <table class="table text-center" style="margin-right: auto; margin-left: auto;">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Position</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Number of Copies</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Estimated Completion</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Kruskal</td>
+                  <td>351</td>
+                  <td><b style="color: red">ERROR</b></td>
+                  <td>n/a</td>
+                </tr>
+              </tbody>
+                
+            </table>
+
+            <br>
+            
+          </div>
+
+          <div class="col-xs-6 rounded" style="margin-right: auto; margin-left: auto; margin-bottom:35px; margin-top:35px; background-color: #ffffff; padding: 1em; min-width: 75%">
+            <h2 class="text-center">Copy Machine #4</h2>
+
+            <p><b>STATUS: </b><b style="color:green">Online</b><i class="float-right">Last updated: <span id="datetime-4"></span></i></p>
+                        
+            <table class="table text-center" style="margin-right: auto; margin-left: auto;">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Position</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Number of Copies</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Estimated Completion</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="Mamat">1</th>
+                  <td>Foster</td>
+                  <td>36</td>
+                  <td><b>Complete</b></td>
+                  <td>n/a</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Mount</td>
+                  <td>45</td>
+                  <td><b>Complete</b></td>
+                  <td>n/a</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Lin</td>
+                  <td>117</td>
+                  <td style="color: green"><b>Processing</b></td>
+                  <td>7:36 p.m.</td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+
+          <div class="col-xs-6 rounded" style="margin-right: auto; margin-left: auto; margin-bottom:35px; margin-top:35px; background-color: #e50909; padding: 1em; min-width: 75%">
+            
+          </div>
+
+
+
+
+  
+
+             
+
+        <hr>
+
+      </div> <!-- /container -->
+
+
+
+    </main>
+
+    <footer class="container text-white">
+      <p>&copy; University of Maryland, College Park 2018</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+            document.getElementById("datetime-2").innerHTML = dt.toLocaleTimeString();
+            document.getElementById("datetime-3").innerHTML = dt.toLocaleTimeString();
+            document.getElementById("datetime-4").innerHTML = dt.toLocaleTimeString();
+    </script>
+
+  </body>
+</html>

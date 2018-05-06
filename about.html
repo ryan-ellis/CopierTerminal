@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.ico">
+
+    <title>UMD Copier Terminal</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+  </head>
+
+  <body style="background-color: #e50909;">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="min-width: 90%">
+    <a class="navbar-brand" href="index.html"><img src="images/umd_cs_logo.png" style="height: 2em; padding: 0 auto;"></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+     <main role="main">
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+
+
+          <div class="col-xs-6 rounded" style="margin-right: auto; margin-left: auto; margin-bottom:35px; margin-top:35px; background-color: #ffffff; padding: 1em; min-width: 75%">
+
+            <h1 class="text-center">About the UMD CS Copier Terminal</h1>
+
+            <br>
+
+            <p>The University of Maryland, College Park Copier Terminal was originally designed and developed by members of the StaffWorld Division of the Computer Science Department. The original version of the software was deployed in early May, 2018 and remains to be an important utility used many of the faculty even today.</p>
+
+          </div>
+
+
+
+
+  
+
+             
+
+        <hr>
+
+      </div> <!-- /container -->
+
+    </main>
+
+    <footer class="container text-white">
+      <p>&copy; University of Maryland, College Park 2018</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $('#exampleModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget) // Button that triggered the modal
+        var recipient = button.data('whatever') // Extract info from data-* attributes
+        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+        var modal = $(this)
+        modal.find('.modal-title').text('New message to ' + recipient)
+        modal.find('.modal-body input').val(recipient)
+      })
+    </script>
+
+  </body>
+</html>
